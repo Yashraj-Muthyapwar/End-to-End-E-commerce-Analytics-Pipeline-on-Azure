@@ -1,0 +1,25 @@
+{
+	"name": "SQL_TOADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLToADLSLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "olist_order_payments_dataset.csv",
+				"folderPath": "Bronze",
+				"fileSystem": "olistdata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
