@@ -3,7 +3,7 @@
 	"location": "centralus",
 	"identity": {
 		"type": "SystemAssigned",
-		"principalId": "f4776567-aef8-421f-849c-8c71569f1431",
-		"tenantId": "70de1992-07c6-480f-a318-a1afcba03983"
+		"principalId": "**************",
+		"tenantId": "**************"
 	}
 }
