@@ -1,0 +1,17 @@
+{
+	"name": "CREATE VIEW",
+	"properties": {
+		"content": {
+			"query": "CREATE SCHEMA gold\n\nCREATE VIEW gold.final\nAS\nSELECT\n      *\nFROM \n     OPENROWSET(\n        BULK 'https://ecommdatastorageaccount.dfs.core.windows.net/olistdata/Silver/',\n        FORMAT = 'PARQUET'\n     ) AS result\n\n\nSELECT * FROM gold.final",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "olist",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
