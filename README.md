@@ -17,6 +17,7 @@
 
 ![Architecture Diagram](architecture_diagram.png)
 
+
 ## 🛠️ Tech Stack
 
 | Service | Role |
@@ -28,4 +29,18 @@
 | Azure Synapse Analytics | Serverless SQL serving |
 | Power BI / Fabric | Dashboards & reports |
 
----
+## 🔄 Pipeline Flow
+
+```
+Data Sources (HTTP / SQL)
+        ↓  Azure Data Factory
+   ADLS Gen2 (Bronze — Raw Data)
+        ↓
+   Azure Databricks ← MongoDB (Enrichment)
+        ↓  PySpark Transformation
+   ADLS Gen2 (Gold — Transformed Data)
+        ↓
+   Azure Synapse Analytics
+        ↓
+   Power BI / Fabric (Dashboards)
+```
