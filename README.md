@@ -47,3 +47,9 @@ Data Sources (HTTP / SQL)
 ```
 
 
+### 📝 License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
+
+Contributions welcome built with ❤️ to make querying & insights feel effortless.
+
+
