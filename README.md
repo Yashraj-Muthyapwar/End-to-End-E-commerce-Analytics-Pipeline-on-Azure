@@ -45,6 +45,27 @@ Data Sources (HTTP / SQL)
         ↓
    Power BI / Fabric (Dashboards)
 ```
+## Prerequisites
+
+- **Azure Subscription** — Active subscription with resource creation permissions
+- **Git** — For version control and ADF Git integration
+- **Power BI Desktop** — For dashboard visualization
+- **filess.io Setup** — Free tier for SQL & MongoDB data hosting
+  
+## ▶️ How to Run
+
+1. Deploy Azure resources (Data Factory, ADLS Gen2, Databricks, Synapse)
+2. Publish the ADF pipelines from the `factory/` and `pipeline/` configs
+3. Connect linked services using `linkedService/` definitions
+4. Trigger the ADF ingestion pipeline
+5. Run Databricks notebooks in order:
+   - `DataIngestionToSQL.ipynb`
+   - `DataIngestionToNoSQL.ipynb`
+6. Query the gold layer in **Synapse Studio** using scripts in `synapse/`
+7. Connect **Power BI** to Synapse and open dashboards
+
+> 💡 All secrets and credentials are managed inside Azure no local `.env` files needed.
+
 
 
 ### 📝 License
