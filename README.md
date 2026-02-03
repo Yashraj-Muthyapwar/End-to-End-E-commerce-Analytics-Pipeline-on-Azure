@@ -14,3 +14,18 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
+
+![Architecture Diagram](architecture_diagram.png)
+
+## 🛠️ Tech Stack
+
+| Service | Role |
+|---|---|
+| Azure Data Factory | Ingestion & orchestration |
+| ADLS Gen2 | Bronze & Gold layer storage |
+| Azure Databricks (PySpark) | Transformation & enrichment |
+| MongoDB | Reference / lookup tables |
+| Azure Synapse Analytics | Serverless SQL serving |
+| Power BI / Fabric | Dashboards & reports |
+
+---
