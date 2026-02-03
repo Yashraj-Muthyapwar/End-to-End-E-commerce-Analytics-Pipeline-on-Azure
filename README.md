@@ -15,7 +15,8 @@
 
 </div>
 
-![Architecture Diagram](architecture_diagram.png)
+## Architecture Diagram
+![architecture_diagram](https://github.com/Yashraj-Muthyapwar/End-to-End-E-commerce-Analytics-Pipeline-on-Azure/blob/main/Architecture.png) 
 
 
 ## 🛠️ Tech Stack
@@ -44,3 +45,5 @@ Data Sources (HTTP / SQL)
         ↓
    Power BI / Fabric (Dashboards)
 ```
+
+
